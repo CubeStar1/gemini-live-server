@@ -40,7 +40,7 @@ class GeminiConnection:
     async def connect(self):
         """Initialize connection to Gemini"""
         print(f"Connecting to Gemini with key: {self.api_key[:5]}...""" ) 
-        self.ws = await connect(
+        self.ws = await websockets.client.connect(
             self.uri,
             extra_headers={"Content-Type": "application/json"}
         )
