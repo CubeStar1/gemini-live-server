@@ -1,0 +1,7 @@
+requests
+Flask-CORS 
+google-generativeai
+websockets
+dotenv
+gunicorn
+fastapi
